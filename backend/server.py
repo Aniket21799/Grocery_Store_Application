@@ -5,6 +5,12 @@ import uom_dao
 import orders_dao
 from sql_connection import get_sql_connection
 
+import os
+
+os.environ["MYSQL_HOST"] = "localhost:3306"
+os.environ["MYSQL_USER"] = "root"
+os.environ["MYSQL_PASSWORD"] = "Aniket@21"
+os.environ["MYSQL_DATABASE"] = "gs"
 
 app = Flask(__name__)
 
